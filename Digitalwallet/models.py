@@ -21,7 +21,7 @@ class Customer(models.Model):
 class Wallet(models.Model):
     User_id = models.IntegerField()
     balance = models.IntegerField()
-    Amount = models.IntegerField()
+    amount = models.IntegerField()
     time = models.DateTimeField()
     # transaction = models.ForeignKey("Transaction",on_delete= models.CASCADE, related_name= "wallet_transaction")
     status = models.CharField(max_length= 15,null=True)
