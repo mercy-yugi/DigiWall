@@ -1,0 +1,16 @@
+<table>
+    <th>
+        <td>Party name</td>
+        <td>Party id</td>
+        <td>Phone number</td>
+    </th>
+
+    {% for third in thirdpartys %}
+    <tr>
+        <td>{{third.party_name}}</td>
+        <td>{{third.party_id}}</td>
+        <td>{{third.phone_number}}</td>
+    </tr>
+    {%endfor%}
+
+</table>

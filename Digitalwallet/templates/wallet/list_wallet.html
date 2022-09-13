@@ -1,0 +1,16 @@
+<table>
+    <th>
+        <td>User id</td>
+        <td>Amount</td>
+        <td>Time</td>
+    </th>
+
+    {% for walet in wallets%}
+    <tr>
+        <td>{{walet.User_id}}</td>
+        <td>{{walet.amount}}</td>
+        <td>{{walet.time}}</td>
+    </tr>
+    {%endfor%}
+
+</table>

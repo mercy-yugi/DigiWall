@@ -1,0 +1,16 @@
+<table>
+    <th>
+        <td>Date</td>
+        <td>Type</td>
+        <td>Amount</td>
+    </th>
+
+    {% for loan in loans%}
+    <tr>
+        <td>{{loan.date}}</td>
+        <td>{{loan.type}}</td>
+        <td>{{loan.amount}}</td>
+    </tr>
+    {%endfor%}
+
+</table>

@@ -1,0 +1,18 @@
+<table>
+    <th>
+        <td>First name</td>
+        <td>Email</td>
+        <td>Age</td>
+    </th>
+
+    {% for customer in customers %}
+    <tr>
+        <td>{{customer.first_name}}</td>
+        <td>{{customer.email}}</td>
+        <td>{{customer.age}}</td>
+    </tr>
+    {%endfor%}
+
+</table>
+
+{% comment %} <img src="{{ post.image.url }}" alt="img"> {% endcomment %}

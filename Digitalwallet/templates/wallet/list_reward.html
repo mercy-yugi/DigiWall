@@ -1,0 +1,16 @@
+<table>
+    <th>
+        <td>Gender Choices</td>
+        <td>Reward Date</td>
+        <td>Reward Points</td>
+    </th>
+
+    {% for reward in rewards %}
+    <tr>
+        <td>{{reward.GENDER_CHOICES}}</td>
+        <td>{{reward.reward_date}}</td>
+        <td>{{reward.reward_points}}</td>
+    </tr>
+    {%endfor%}
+
+</table>

@@ -1,0 +1,16 @@
+<table>
+    <th>
+        <td>Transaction type</td>
+        <td>Transaction fee</td>
+        <td>Transaction time</td>
+    </th>
+
+    {% for transact in transactions%}
+    <tr>
+        <td>{{transact.transaction_type}}</td>
+        <td>{{transact.transaction_fee}}</td>
+        <td>{{transact.transaction_time}}</td>
+    </tr>
+    {%endfor%}
+
+</table>

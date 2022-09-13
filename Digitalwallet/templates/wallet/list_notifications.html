@@ -1,0 +1,16 @@
+<table>
+    <th>
+        <td>Customer Name</td>
+        <td>Recipient</td>
+        <td>Status</td>
+    </th>
+
+    {% for nots in notifications %}
+    <tr>
+        <td>{{nots.customer_name}}</td>
+        <td>{{nots.recipient}}</td>
+        <td>{{nots.STATUS}}</td>
+    </tr>
+    {%endfor%}
+
+</table>
