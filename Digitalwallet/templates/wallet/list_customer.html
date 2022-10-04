@@ -1,8 +1,10 @@
+
 <table>
     <th>
         <td>First name</td>
         <td>Email</td>
         <td>Age</td>
+        <td>View Profile</td>
     </th>
 
     {% for customer in customers %}
@@ -10,6 +12,7 @@
         <td>{{customer.first_name}}</td>
         <td>{{customer.email}}</td>
         <td>{{customer.age}}</td>
+        <td><a href="{%url 'customer_profile' id=customer.id%}">Profile</a></td>
     </tr>
     {%endfor%}
 

@@ -1,0 +1,7 @@
+<h2>Edit Account</h2>
+<form method="POST">{% csrf_token %}
+
+{{form.account_profile}}
+
+<button type="submit">Save</button>
+</form>

@@ -22,4 +22,14 @@ urlpatterns = [
     path("transactions/",views.list_transaction,name="transaction_list"),
     path("wallets/",views.list_wallet,name="wallet_list"),
     path("loans/",views.list_loans,name="loans_list"),
+    path("customers/<int:id>/",views.customer_profile,name="customer_profile"),
+    path("customers/<int:id>/",views.edit_customer_profile,name="edit_customer_profile"),
+    path("walletss/<int:id>/",views.edit_wallet,name="edit_wallet"),
+    path("walletss/<int:id>/",views.customer_profile,name="customer_profile"),
+    path("accountss/<int:id>/",views.account_profile,name="account_profile"),
+    path("accountss/<int:id>/",views.edit_profile,name="edit_profile"),
+    path("notification/<int:id>/",views.notification_profile,name="notification_profile"),
+    path("notification/<int:id>/",views.edit_notification,name="edit_notification"),
+    
+
 ]
