@@ -30,6 +30,7 @@ urlpatterns = [
     path("accountss/<int:id>/",views.edit_profile,name="edit_profile"),
     path("notification/<int:id>/",views.notification_profile,name="notification_profile"),
     path("notification/<int:id>/",views.edit_notification,name="edit_notification"),
+    path("notification/<int:id>/",views.notification_profile,name="notification_profile"),
     
 
 ]
